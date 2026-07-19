@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAAZ_ZAFAR.SYS — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=VT323&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="crt-overlay"></div>
+<div class="crt-vignette"></div>
+<div class="crt-flicker"></div>
+<div class="crt-poweron" id="poweron"></div>
+
+<!-- BOOT SCREEN -->
+<div id="boot-screen">
+  <div id="boot-lines"></div>
+  <div id="boot-skip">[ PRESS ANY KEY OR CLICK TO SKIP ]</div>
+</div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-brand"><span class="status-dot"></span> MAAZ_ZAFAR.SYS</div>
+  <div class="nav-links" id="navLinks">
+    <a href="#home" class="active">home</a>
+    <a href="#about">about</a>
+    <a href="#experience">experience</a>
+    <a href="#projects">projects</a>
+    <a href="#skills">skills</a>
+    <a href="#education">education</a>
+    <a href="#certificates">certs</a>
+    <a href="#resume">resume</a>
+    <a href="#contact">contact</a>
+  </div>
+  <div class="nav-toggles">
+    <button class="toggle-btn" id="crtToggle">CRT: ON</button>
+    <button class="toggle-btn" id="themeToggle">PHOSPHOR: GREEN</button>
+  </div>
+</nav>
+
+<main>
+  <!-- HOME / ABOUT -->
+  <section id="home">
+    <div class="hero-grid">
+      <div class="reveal">
+        <div class="hero-name">MAAZ ZAFAR</div>
+        <div class="hero-role">// FULL STACK DEVELOPER — MERN / AWS</div>
+        <div class="typewriter" id="typewriter"></div>
+        <div class="contact-row">
+          <a class="icon-btn" href="mailto:maazzafar156@gmail.com">✉ maazzafar156@gmail.com</a>
+          <a class="icon-btn" href="tel:+918849978818">☎ +91 8849978818</a>
+          <a class="icon-btn" href="https://www.linkedin.com/in/maazzafar/" target="_blank" rel="noopener">◈ LinkedIn</a>
+          <a class="icon-btn" href="https://github.com/maazzafar1234" target="_blank" rel="noopener">◇ GitHub</a>
+        </div>
+      </div>
+      <div class="glass id-card reveal" id="about">
+        <div class="eyebrow">system profile</div>
+        <div class="id-row"><span class="k">NAME:</span><span class="v">Maaz Zafar</span></div>
+        <div class="id-row"><span class="k">ROLE:</span><span class="v">Full Stack Developer</span></div>
+        <div class="id-row"><span class="k">STATUS:</span><span class="v" style="color:var(--phosphor)">● OPEN TO WORK</span></div>
+        <div class="id-row"><span class="k">LOCATION:</span><span class="v">Vadodara, Gujarat, IN</span></div>
+        <div class="id-row"><span class="k">STACK:</span><span class="v">React / Node / AWS</span></div>
+        <div class="id-row"><span class="k">UPTIME:</span><span class="v" id="uptime">—</span></div>
+        <div class="id-row" style="border-bottom:none;"><span class="k">EDU:</span><span class="v">MCA · CGPA 8.71</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="eyebrow">career.log</div>
+    <h2 class="section-title">Experience</h2>
+    <div class="glass log-panel reveal">
+      <div class="log-header">&gt; LOG_ENTRY_001</div>
+      <div class="log-role">Associate Application Engineer</div>
+      <div class="log-meta">Hexaview Technologies · Sept '25 – Mar '26</div>
+      <ul class="log-list">
+        <li>Served as the <b>primary technical liaison</b> for Adobe's support team, improving stakeholder response time by <b>30%</b> through structured weekly syncs across a 3+ month engagement.</li>
+        <li>Engineered and deployed an <b>AI-powered chatbot</b> for Adobe by integrating AI/ML APIs into conversational workflows, increasing automated query resolution rate by <b>25%</b> and reducing average ticket handling time by <b>4 minutes</b>.</li>
+        <li>Debugged and tested chatbot conversational flows across <b>6 release cycles</b>, identifying and resolving <b>40+ defects</b> pre-production to ensure reliable, secure user interactions.</li>
+        <li>Collaborated cross-functionally with Adobe stakeholders, designers, and project managers to translate requirements into iterative feature updates, shipping <b>8 feature releases</b> on schedule.</li>
+        <li>Applied <b>Retrieval-Augmented Generation (RAG)</b> techniques to ground chatbot responses in product documentation, reducing inaccurate answers.</li>
+        <li>Participated in sprint planning and code reviews, contributing to consistent <b>two-week agile</b> delivery cycles.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="eyebrow">projects.dir</div>
+    <h2 class="section-title">Projects — click / hover to flip</h2>
+    <div class="projects-grid">
+
+      <div class="flip-card reveal" tabindex="0" role="button" aria-label="HPF NGO Platform, flip for details">
+        <div class="card-glow"></div>
+        <div class="flip-inner">
+          <div class="flip-face flip-front glass">
+            <div>
+              <svg class="disk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:var(--phosphor)"><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5"/><rect x="7" y="3" width="8" height="6" stroke-width="1.5"/><rect x="7" y="15" width="3" height="4" stroke-width="1.5"/></svg>
+              <div class="card-title">HPF — NGO Platform</div>
+              <div class="card-hook">Cloud-native AWS platform managing volunteer, training, donor & certification workflows.</div>
+            </div>
+            <div>
+              <div class="badge-row">
+                <span class="badge">React.js</span><span class="badge">Node.js</span><span class="badge">AWS</span><span class="badge">MySQL</span>
+              </div>
+              <div class="flip-hint" style="margin-top:14px;">[ SEPT '25 · FLIP FOR LOG &gt; ]</div>
+            </div>
+          </div>
+          <div class="flip-face flip-back glass">
+            <div class="back-title">&gt; DETAIL_VIEW / HPF.EXE</div>
+            <ul class="back-list">
+              <li>Architected a cloud-native AWS platform managing volunteer, training, donor, and certification workflows.</li>
+              <li>Enabled event-driven auto-scaling and real-time communication via Lambda, S3, SNS/SQS, and Socket.io.</li>
+              <li>Cut manual workflow processing time by 35% through automated event-driven pipelines.</li>
+              <li>Implemented JWT/WebAuthn authentication and RBAC for secure platform access.</li>
+              <li>Automated PDF certificate generation and built live Prometheus/Grafana admin dashboards.</li>
+              <li>Designed and documented RESTful APIs for volunteer registration, donation tracking, and certification issuance.</li>
+              <li>Containerized services with Docker and configured a CI/CD pipeline for automated testing and deployment.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flip-card reveal" tabindex="0" role="button" aria-label="Hexaview Digital Experience Platform, flip for details">
+        <div class="card-glow"></div>
+        <div class="flip-inner">
+          <div class="flip-face flip-front glass">
+            <div>
+              <svg class="disk-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:var(--phosphor)"><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="1.5"/><rect x="7" y="3" width="8" height="6" stroke-width="1.5"/><rect x="7" y="15" width="3" height="4" stroke-width="1.5"/></svg>
+              <div class="card-title">Hexaview DXP</div>
+              <div class="card-hook">Reusable React/Next.js component architecture powering the corporate website.</div>
+            </div>
+            <div>
+              <div class="badge-row">
+                <span class="badge">React.js</span><span class="badge">Next.js</span><span class="badge">JavaScript</span>
+              </div>
+              <div class="flip-hint" style="margin-top:14px;">[ MAR '26 · FLIP FOR LOG &gt; ]</div>
+            </div>
+          </div>
+          <div class="flip-face flip-back glass">
+            <div class="back-title">&gt; DETAIL_VIEW / HEXAVIEW_DXP.EXE</div>
+            <ul class="back-list">
+              <li>Built a reusable React.js/Next.js component architecture for the corporate website.</li>
+              <li>Reduced page load time by 20% through optimized component design.</li>
+              <li>Improved code maintainability with responsive, reusable UI layouts.</li>
+              <li>Collaborated with designers to translate UI mockups into accurate, reusable React components.</li>
+              <li>Optimized assets and implemented lazy loading to improve page-load performance scores.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="eyebrow">system.specs</div>
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="glass skill-panel reveal" data-fill="95">
+        <div class="skill-cat">FRONTEND</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        <div class="chip-row">
+          <span class="chip">React.js</span><span class="chip">Next.js</span><span class="chip">TypeScript</span>
+          <span class="chip">JavaScript</span><span class="chip">Redux</span><span class="chip">Tailwind CSS</span>
+          <span class="chip">HTML5</span><span class="chip">CSS3</span>
+        </div>
+      </div>
+      <div class="glass skill-panel reveal" data-fill="88">
+        <div class="skill-cat">BACKEND</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        <div class="chip-row">
+          <span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">Nest.js</span>
+          <span class="chip">PHP</span><span class="chip">RESTful APIs</span>
+        </div>
+      </div>
+      <div class="glass skill-panel reveal" data-fill="82">
+        <div class="skill-cat">DATABASES</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        <div class="chip-row">
+          <span class="chip">MongoDB</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span>
+          <span class="chip">Firebase</span><span class="chip">SSMS</span>
+        </div>
+      </div>
+      <div class="glass skill-panel reveal" data-fill="90">
+        <div class="skill-cat">CLOUD & DEVOPS</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        <div class="chip-row">
+          <span class="chip">AWS Lambda</span><span class="chip">S3</span><span class="chip">SNS/SQS</span>
+          <span class="chip">Docker</span><span class="chip">CI/CD</span><span class="chip">Git/GitHub</span>
+        </div>
+      </div>
+      <div class="glass skill-panel reveal" data-fill="75">
+        <div class="skill-cat">OTHER</div>
+        <div class="skill-bar-track"><div class="skill-bar-fill"></div></div>
+        <div class="chip-row">
+          <span class="chip">Java</span><span class="chip">C++</span><span class="chip">.NET</span>
+          <span class="chip">Python</span><span class="chip">Selenium</span><span class="chip">Postman</span><span class="chip">RAG</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="eyebrow">credentials.log</div>
+    <h2 class="section-title">Education</h2>
+    <div class="edu-list">
+      <div class="glass edu-row reveal">
+        <div>
+          <div class="edu-school">Lovely Professional University</div>
+          <div class="edu-degree">Phagwara, Punjab — Master of Computer Application</div>
+        </div>
+        <div>
+          <div class="edu-score">CGPA 8.71</div>
+          <div class="edu-date">May '26</div>
+        </div>
+      </div>
+      <div class="glass edu-row reveal">
+        <div>
+          <div class="edu-school">Maharaja Sayajirao University of Baroda</div>
+          <div class="edu-degree">Vadodara, Gujarat — Bachelor of Computer Application</div>
+        </div>
+        <div>
+          <div class="edu-score">CGPA 7.1</div>
+          <div class="edu-date">May '23</div>
+        </div>
+      </div>
+      <div class="glass edu-row reveal">
+        <div>
+          <div class="edu-school">Urmi School and Hostel</div>
+          <div class="edu-degree">Vadodara, Gujarat — Intermediate</div>
+        </div>
+        <div>
+          <div class="edu-score">78%</div>
+          <div class="edu-date">Mar '20</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates">
+    <div class="eyebrow">achievements.unlocked</div>
+    <h2 class="section-title">Certificates</h2>
+    <div class="cert-grid">
+      <div class="glass cert-card reveal">
+        <div class="cert-badge">◆</div>
+        <div>
+          <div class="cert-name">Oracle Cloud Infrastructure Foundation Associate</div>
+          <div class="cert-meta">Oracle · May '25</div>
+        </div>
+      </div>
+      <div class="glass cert-card reveal">
+        <div class="cert-badge">◆</div>
+        <div>
+          <div class="cert-name">Mastering Laravel Framework and PHP</div>
+          <div class="cert-meta">Coursera · Oct '24</div>
+        </div>
+      </div>
+      <div class="glass cert-card reveal">
+        <div class="cert-badge">◆</div>
+        <div>
+          <div class="cert-name">Introduction to Software Testing</div>
+          <div class="cert-meta">Coursera · Mar '23</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume">
+    <div class="eyebrow">export.pdf</div>
+    <h2 class="section-title">Resume</h2>
+    <div class="glass resume-panel reveal">
+      <div class="resume-left">
+        <div class="resume-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color:var(--phosphor)">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke-width="1.5"/>
+            <path d="M14 2v6h6" stroke-width="1.5"/>
+            <path d="M9 15l2 2 4-4" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div>
+          <div class="resume-title">MAAZ_ZAFAR_RESUME.PDF</div>
+          <div class="resume-meta" id="resumeMeta">SIZE: —  ·  UPDATED: 2026  ·  FORMAT: PDF</div>
+          <div class="resume-desc">Full CV — experience, projects, skills, education & certifications in one file.</div>
+        </div>
+      </div>
+      <a class="download-btn" id="resumeDownload" href="https://drive.google.com/file/d/1r_IkyM-0vjBIsqt9nFbX_HtLpNaeZ4NO/view?usp=drivesdk" download="Maaz_Zafar_Resume.pdf">
+        <span class="dl-icon">⬇</span> DOWNLOAD ▸
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="eyebrow">dial-up.connect</div>
+    <h2 class="section-title">Contact</h2>
+    <div class="glass terminal-box reveal">
+      <div class="prompt-line">&gt; connect --to maaz <span class="type-cursor"></span></div>
+      <form class="form-grid" id="contactForm" novalidate>
+        <input type="text" id="cf_name" name="name" placeholder="your_name" autocomplete="name">
+        <input type="email" id="cf_email" name="email" placeholder="your_email" autocomplete="email">
+        <textarea id="cf_message" name="message" placeholder="message.txt"></textarea>
+        <button class="submit-btn" type="submit">SEND ▸</button>
+        <span id="sentMsg" style="font-family:var(--mono); font-size:12px; color:var(--phosphor); opacity:0; transition:opacity 0.3s;"></span>
+        <a id="fallbackMailLink" href="#" style="display:none; align-items:center; gap:8px; font-family:var(--mono); font-size:12px; color:var(--phosphor); text-decoration:underline; width:fit-content;">✉ Click here if your mail app didn't open</a>
+      </form>
+      <div class="contact-direct">
+        <a class="icon-btn" href="mailto:maazzafar156@gmail.com">✉ maazzafar156@gmail.com</a>
+        <a class="icon-btn" href="tel:+918849978818">☎ +91 8849978818</a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/maazzafar/" target="_blank" rel="noopener">◈ LinkedIn</a>
+        <a class="icon-btn" href="https://github.com/maazzafar1234" target="_blank" rel="noopener">◇ GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 MAAZ_ZAFAR.SYS — ALL SYSTEMS OPERATIONAL — BUILT WITH GLASS & PHOSPHOR</footer>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
