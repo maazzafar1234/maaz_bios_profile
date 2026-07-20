@@ -1,4 +1,4 @@
-# 🖥️ MAAZ_ZAFAR.SYS_BIOS
+# 🖥️ MAAZ_ZAFAR.SYS_BIOS_MAX
 
 > A retro BIOS-inspired personal portfolio website with CRT effects, glassmorphism UI, and interactive animations.
 
